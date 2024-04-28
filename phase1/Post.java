@@ -8,9 +8,9 @@ public class Post extends Interaction{
     private ArrayList<Image> pics;
     private ArrayList<Comment> comments=new ArrayList<Comment>();
     private Integer commentcount;
-    private static Integer postIDcounter;
+    private static Integer postIDcounter=0;
     private Integer postID;
-    private int originalPostID;
+    private int originalPostID=0;
     
     public Post(String author, String description,ArrayList<Image> pics){
         super(author,description);
