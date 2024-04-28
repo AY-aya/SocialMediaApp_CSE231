@@ -8,9 +8,12 @@ import java.util.ArrayList;
 	private String username;
 	private String password;
 	private String email;
-	private ArrayList<userprofile> friendlist;
+	private ArrayList<String> friendlist;
+       private ArrayList<Post> posts=new ArrayList<Post>();
 	private Image profilepicture;
 	public int friendcounter=0;
+        
+        //public userprofile(){};//empty constructor for 
 	
 	// constructor for only username,password, email to be used in registeration and login.
 	public userprofile(String username, String password, String email) {
@@ -20,22 +23,22 @@ import java.util.ArrayList;
 	}
 	// constructor for all attributes
         public userprofile(String username, String password, String email,String bio, Image profilepicture) {
-        	this.username=username;
+            this.username=username;
             this.password=password;
             this.email=email;
-          	this.bio=bio;
+            this.bio=bio;
             this.profilepicture=profilepicture;
 	}
         // constructor for only username ,password,email,bio
         public userprofile(String username, String password, String email,String bio) {
-			this.username=username;
+        	this.username=username;
             this.password=password;
             this.email=email;
             this.bio=bio;
 }
         // constructor for only username,password,email,profilepicture
         public userprofile(String username, String password, String email,Image profilepicture) {
-			this.username=username;
+        	this.username=username;
             this.password=password;
             this.email=email;
             this.profilepicture= profilepicture;
@@ -84,22 +87,42 @@ import java.util.ArrayList;
             this.password=password;
         }
         
-       public void addFriend(userprofile friend){
+       public void addFriend(String friend){
            if (!friendlist.contains(friend)){
                friendlist.add(friend); }      
-           		friendcounter++;
+               friendcounter++;
         }
        
-       public void removeFriend(userprofile friend){
+       public void removeFriend(String friend){
            if (friendlist.contains(friend)){    
             friendlist.remove(friend);
             friendcounter--;
             }
         }
        
+       // this method gives the user the choice whether to approve or decline a friend request and will be further implemented in GUI part 
+       public void Friendrequest(String username,boolean choice ) {
+    	   if (choice==true) {
+    		   addFriend(username);
+    	   }
+    	   else {
+    		   System.out.println("friend request is declined");
+    	   }
+       }
+       
+       
        public void viewFriendList() {
-    	    for (userprofile friend : friendlist) {
-    	        System.out.println( friend.getUsername() + friend.getBio());
+    	    for (String friend : friendlist) {
+    	        System.out.println(friend);
     	    }
-       }       
+       } 
+       
+       public void createpost(String author, String description, ArrayList<Image> pics) {
+        Post x=new Post(author,description,pics);
+        posts.add(x);
+    }
+       
+       public void share(Post newpost){
+            posts.add(newpost);
+       }
 }
