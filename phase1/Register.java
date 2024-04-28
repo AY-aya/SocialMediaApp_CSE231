@@ -1,6 +1,5 @@
 package com.mycompany.phase1;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -16,15 +15,15 @@ public class Register {
 	private String  username;
 	private String  password;
 	private String  email;
-	private String  phonenumber;
+	
 	
 	public Register() { }
-	public Register( String  name ,String  username , String  password,String  email ,String  phonenumber ) {
+	public Register( String  name ,String  username , String  password,String  email ) {
 	this . name = name;
 	this . username = username;
 	this .password=password;
 	this .email =email;
-	this .phonenumber=phonenumber;
+	
 	
 	/*register takes all parameters */
 	
@@ -39,18 +38,14 @@ public class Register {
 	    if (password == null || password.isEmpty()) {
 	        throw new IllegalArgumentException("Password cannot be empty");
 	    }
-	    if (phonenumber == null || phonenumber.isEmpty()) {
-	        throw new IllegalArgumentException("Phone number cannot be empty");
-	    }
+	    
 	    if (email == null || email.isEmpty()) {
 	        throw new IllegalArgumentException("Email cannot be empty");
 	    }
 	    if (!email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
 	        throw new IllegalArgumentException("Invalid email address");
 	    }
-	    if (!phonenumber.matches("^[0-9]{10}$")) {
-	        throw new IllegalArgumentException("Invalid phone number");
-	    } 
+	    
 	    if (!username.matches("^[a-zA-Z0-9_]{3,20}$")) {
 	        throw new IllegalArgumentException("Username must be between 3 and 20 characters long and can contain only letters, digits, and underscore");
 	    }
@@ -63,7 +58,7 @@ public class Register {
 
 	    try {
 	        FileWriter writer = new FileWriter(filePath, true); // append mode
-	        String userData = String.join(",", name, username, password, email, phonenumber);
+	        String userData = String.join(",", name, username, password, email);
 	        writer.write(userData + "\n");
 	        writer.close();
 	        System.out.println("Registration successful!");
