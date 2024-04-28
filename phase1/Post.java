@@ -10,6 +10,7 @@ public class Post extends Interaction{
     private Integer commentcount;
     private static Integer postIDcounter;
     private Integer postID;
+    private int originalPostID;
     
     public Post(String author, String description,ArrayList<Image> pics){
         super(author,description);
@@ -24,12 +25,21 @@ public class Post extends Interaction{
         this.postID=postIDcounter;
     }
      
-      public Post(String author, String description){
+    public Post(String author, String description){
         super(author,description); 
         postIDcounter++;
         this.postID=postIDcounter;
     }
-     
+    
+    //constructors for shared posts
+    public Post(String author, String description, int SharedPostID){
+        super(author, description);
+        this.originalPostID = SharedPostID;
+    }
+    public Post(String author, int SharedPostID){
+        super(author);
+        this.originalPostID = SharedPostID;
+    }
       
     public Integer getpostID(){
      return postID;
@@ -51,14 +61,16 @@ public class Post extends Interaction{
         return commentcount;
     }
 
-    public void AddComment(String user, String description ) {
+    public void addComment(String user, String description ) {
         Comment x=new Comment(user,description,this.postID);
         comments.add(x);
         this.commentcount++;
     }
     
-    public void sharepost(userprofile user){
-       // user.share(this);
+    //share post method
+    public void sharePost(userprofile user, String text){
+       Post sharedPost= new Post(user.getUsername(),text, this.postID);
+       user.share(sharedPost);
     }
     
 }
