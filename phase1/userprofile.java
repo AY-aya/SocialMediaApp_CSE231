@@ -6,42 +6,47 @@ import java.util.ArrayList;
  class userprofile{
 	private String bio;
 	private String username;
+        private String name;
 	private String password;
 	private String email;
 	private ArrayList<String> friendlist;
-       private ArrayList<Post> posts=new ArrayList<Post>();
+        private ArrayList<Post> posts=new ArrayList<Post>();
 	private Image profilepicture;
 	public int friendcounter=0;
         
         //public userprofile(){};//empty constructor for 
 	
 	// constructor for only username,password, email to be used in registeration and login.
-	public userprofile(String username, String password, String email) {
-				this.username=username;
+	public userprofile(String username, String password, String email, String name) {
+                this.username=username;
                 this.password=password;
                 this.email=email;
+                this.name= name;
 	}
 	// constructor for all attributes
-        public userprofile(String username, String password, String email,String bio, Image profilepicture) {
+        public userprofile(String username, String password, String email,String bio, Image profilepicture, String name) {
             this.username=username;
             this.password=password;
             this.email=email;
             this.bio=bio;
             this.profilepicture=profilepicture;
+            this.name= name;
 	}
         // constructor for only username ,password,email,bio
-        public userprofile(String username, String password, String email,String bio) {
+        public userprofile(String username, String password, String email,String bio, String name) {
         	this.username=username;
             this.password=password;
             this.email=email;
             this.bio=bio;
+            this.name= name;
 }
         // constructor for only username,password,email,profilepicture
-        public userprofile(String username, String password, String email,Image profilepicture) {
+        public userprofile(String username, String password, String email,Image profilepicture, String name) {
         	this.username=username;
             this.password=password;
             this.email=email;
             this.profilepicture= profilepicture;
+            this.name= name;
 }
         
         String getBio(){
@@ -64,8 +69,24 @@ import java.util.ArrayList;
             return friendlist;
         }
         
+        public ArrayList<Post> getPosts() {
+        return posts;
+    }
+    
+        public Post getpost (int a){
+            return posts.get(a);
+        }
+        
         Image getProfilepicture(){
             return profilepicture;
+        }
+        
+        public String getName() {
+        return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
         }
         
         void setBio(String bio){
