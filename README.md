@@ -8,8 +8,8 @@ ________________________________________________________________________________
 # Table of Contents
 
 [1.Features](#Features)
-[2.How to setup](#Howtosetup)
-[3.Usage Example](#UsageExample)
+[2.How to setup](#How-to-setup)
+[3.Usage Example](#Usage-Example)
 _________________________________________________________________________________________________________________________________________________________________________________________________________
 # Features:
 our application Chirp Lounge allows the user to:
