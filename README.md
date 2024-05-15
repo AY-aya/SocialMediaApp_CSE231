@@ -5,10 +5,11 @@ SocialMediaApp_CSE231
 hello everyone, we're creating a social media platform as a project for one of our courses. 
 The aim is to use OOP, JavaFX, and networking principles to create an awesome application
 _________________________________________________________________________________________________________________________________________________________________________________________________________
-#Table of Contents
+# Table of Contents
+
 [1.Features](#Features)
-
-
+[2.How to setup](#Howtosetup)
+[3.Usage Example](#UsageExample)
 _________________________________________________________________________________________________________________________________________________________________________________________________________
 # Features:
 our application Chirp Lounge allows the user to:
