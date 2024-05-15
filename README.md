@@ -33,3 +33,58 @@ To get a local copy up and running follow these simple steps.
     5) happy chirping!!!
  _________________________________________________________________________________________________________________________________________________________________________________________________________
 # Usage Example  
+
+1) welcome page
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/30fb08f9-e51c-4549-8206-ff9e61e27354)
+
+2) sign up
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/ecb2ba01-366c-49dc-bbeb-272b6a238541)
+
+3) login
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/0af73314-9387-43e0-a4b8-1cf7d70ad67c)
+
+4) forget password (reset password using color security question)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/4a8ff97e-090f-418e-85b5-19bb7d115f34)
+
+5) home page
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/22ff25b9-d878-467a-ade7-5962ebfa3904)
+
+6)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/e346019d-3b95-460d-b0be-4f6655ba8b8e)
+
+7)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/101de848-25dd-4b92-a849-573af87cefb7)
+
+8)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/741f029b-4b99-41a9-a52f-2d4b69396a92)
+
+9)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/fda04b7f-ae23-4f6c-b34e-ee43ad22c802)
+
+10)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/71f67ca1-105e-4ebb-bf0e-886e3775eed9)
+
+11)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/5792cec5-7adb-44ef-8748-9bb8f6a7c9fc)
+
+12)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/5df59fed-466c-43c5-bbc1-dbc0207d353a)
+
+13)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/87733bd3-3b91-493c-a029-6b0443de9a52)
+
+14)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/632ff9aa-0cf9-4d0a-971e-1c62df8c821e)
+
+15)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/58ba9a35-47d1-4c43-bc94-f31aa1b9e473)
+
+16)
+![image](https://github.com/AY-aya/SocialMediaApp_CSE231/assets/160540583/a3fc7080-605b-4f2b-a1f2-582e5e4c0c3b)
+
+
+
+
+
+
+
