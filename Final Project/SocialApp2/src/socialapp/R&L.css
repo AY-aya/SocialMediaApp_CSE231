@@ -1,0 +1,33 @@
+
+.body{
+    -fx-background-image: url("11.png");
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-transparency: 0.5; /* Set transparency value between 0.0 (fully transparent) and 1.0 (fully opaque) */
+    -fx-background-color: white;
+}
+
+.image{
+    -fx-background-image: url("logo.jpg");
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-transparency: 0.5; /* Set transparency value between 0.0 (fully transparent) and 1.0 (fully opaque) */
+    -fx-background-color: white;
+}
+.image1{
+    -fx-background-image: url("3.jpg");
+
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-transparency: 0.5; /* Set transparency value between 0.0 (fully transparent) and 1.0 (fully opaque) */
+    -fx-background-color: white;
+}
+
+
+.text-field {
+    -fx-text-fill: white; 
+    -fx-background-color: #3c1361;
+}

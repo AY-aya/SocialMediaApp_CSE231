@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialapp.CreatePostController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: #BDB5D5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="372.0" layoutY="34.0" prefHeight="50.0" prefWidth="351.0" text="Share your thoughts!" textFill="#301934" AnchorPane.leftAnchor="372.0" AnchorPane.rightAnchor="371.8" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Monotype Corsiva" size="47.0" />
+               </font>
+            </Label>
+            <Button fx:id="postbutton" layoutX="531.0" layoutY="265.0" mnemonicParsing="false" onAction="#createPost" prefHeight="74.0" prefWidth="138.0" style="-fx-background-color: #301934;" text="POST" textFill="WHITE" AnchorPane.leftAnchor="531.0" AnchorPane.topAnchor="265.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label layoutX="47.0" layoutY="141.0" text="TEXT:" textFill="#301934" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="141.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextField id="txtfield" fx:id="postTextArea" layoutX="199.0" layoutY="123.0" prefHeight="87.0" prefWidth="625.0" promptText="Share your thoughts here" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="270.19999999999993" AnchorPane.topAnchor="123.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Label layoutX="47.0" layoutY="204.0" prefHeight="40.0" prefWidth="93.0" text="IMAGE:" textFill="#301934" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="204.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="182.0" fitWidth="206.0" layoutX="903.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.272293090820312" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageview" fitHeight="326.0" fitWidth="376.0" layoutX="40.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="349.0" />
+            <Button id="uploadbutton" fx:id="uploadbutton" layoutX="47.0" layoutY="265.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="74.0" prefWidth="163.0" style="-fx-background-color: #301934;" text="UPLOAD IMAGE" textFill="WHITE" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="265.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="backbutton" layoutX="531.0" layoutY="406.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="74.0" prefWidth="138.0" style="-fx-background-color: #301934;" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="216.60000000000002" AnchorPane.leftAnchor="531.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

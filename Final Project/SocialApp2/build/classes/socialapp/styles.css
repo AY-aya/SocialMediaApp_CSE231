@@ -1,0 +1,38 @@
+
+/* CSS for clicked state */
+.heart-button.clicked {
+    -fx-text-fill: purple; /* dark purple color for clicked state */
+}
+
+/* CSS for unclicked state */
+.heart-button, .comment-button, .share-button{
+    -fx-font-size: 24px;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+.Main-buttons {
+    -fx-font-size: 45px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.flash {
+    /* Change the background color to indicate the button is clicked */
+    -fx-text-fill: blueviolet;
+    /* Define transition properties */
+    -fx-text-fill: blueviolet;
+    -fx-transition: text-fill 0.1s;
+}
+.flashMain {
+    /* Change the background color to indicate the button is clicked */
+    -fx-text-fill: black;
+    /* Define transition properties */
+    -fx-text-fill: black;
+    -fx-transition: text-fill 0.1s;
+}
+
+
+
+
+
+
