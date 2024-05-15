@@ -4,6 +4,8 @@
 SocialMediaApp_CSE231
 hello everyone, we're creating a social media platform as a project for one of our courses. 
 The aim is to use OOP, JavaFX, and networking principles to create an awesome application
+
+youtube guide: https://youtu.be/9lloQHsh4Co
 _________________________________________________________________________________________________________________________________________________________________________________________________________
 # Table of Contents
 
